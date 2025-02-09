@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    color: whitesmoke;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navDiv {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(darkman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+span {
+    color: #ea1538;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+nav ul li a {
+    color: whitesmoke; /* Change to desired color */
+    text-decoration: none; /* Remove underline */
+    padding: 37.5px 8px;
+}
+
+nav ul li a:hover {
+    transition: .3s ease;
+    color: #ea1538; /* Change color on hover */
+}
+
+.home:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+button {
+    margin-right: 30px;
+    border: none;
+    background: #ea1538;
+    padding: 12px 30px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .4s;
+}
+
+button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+span {
+    color: #ea1538; /* This will apply to "Code" and "Guru" */
+}
+
+.logo span {
+    color: #ea1538; /* This will apply to "Code" and "Guru" */
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 0.8rem; /* Slightly smaller font on mobile */
+    }
+}

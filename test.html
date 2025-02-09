@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nav bar only</title>
+    <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <div class="navDiv">
+            <nav>
+                <h2 class="logo" id="logo">Carp<span>Code</span></h2>
+                <ul>
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a class="abt" href="#">About</a></li>
+                    <li><a class="srv" href="#">Service</a></li>
+                    <li><a class="pfo" href="#">Portfolio</a></li>
+                    <li><a class="ctu" href="#">Contact Us</a></li>
+                </ul>
+                <button type="button">subscribe</button>
+            </nav>
+        </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Only</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="navDiv">
+        <nav>
+            <h2 class="logo" id="logo">Carp<span>Code</span></h2>
+            <ul>
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="abt" href="#">About</a></li>
+                <li><a class="srv" href="#">Service</a></li>
+                <li><a class="pfo" href="#">Portfolio</a></li>
+                <li><a class="ctu" href="#">Contact Us</a></li>
+            </ul>
+            <button type="button">Subscribe</button>
+        </nav>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const logo = document.getElementById('logo');
+
+            logo.addEventListener('dblclick', function() {
+                if (logo.innerHTML === 'Carp<span>Code</span>') {
+                    logo.innerHTML = 'Coding<span>Guru</span>';
+                } else {
+                    logo.innerHTML = 'Carp<span>Code</span>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
